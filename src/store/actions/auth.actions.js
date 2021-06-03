@@ -7,12 +7,16 @@ export const changeFromFirstTimer = () => {
   };
 };
 
-export const addToCart = data => dispatch => {
-  dispatch({
-    type: ADD_TO_CART,
-    payload: [data],
-  });
-  showFeedback('Item added to cart successfully');
+export const addToCart = data => async dispatch => {
+  try {
+    dispatch({
+      type: ADD_TO_CART,
+      payload: [data],
+    });
+    dispatch(showFeedback('Item added to cart successfully'));
+  } catch (error) {
+    dispatch(showFeedback('Item added to cart successfully'));
+  }
 };
 
 export const checkout = () => dispatch => {
