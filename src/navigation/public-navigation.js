@@ -116,6 +116,7 @@ export const BuyStack = () => {
       <Stack.Screen name="ProductsDetails" component={productDetails} />
       <Stack.Screen name="Cart" component={cart} />
       <Stack.Screen name="Checkout" component={checkout} />
+      <Stack.Screen name="Onboarding" component={OnboardingStack} />
     </Stack.Navigator>
   );
 };

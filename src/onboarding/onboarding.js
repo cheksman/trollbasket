@@ -41,7 +41,7 @@ const Onboarding = () => {
       </View>
 
       <View style={onboardingStyles.buttonContainer}>
-        <TouchableOpacity onPress={() => navigation.navigate('Buy')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
           <Text style={onboardingStyles.buttonText}>SKIP</Text>
         </TouchableOpacity>
       </View>
